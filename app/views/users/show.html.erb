@@ -1,0 +1,12 @@
+<% provide(:title, @user.name) %>
+<h1>
+  <%= gravatar_for @user %>
+  <%= @user.name %>
+</h1>
+<%= @user.email %>
+<br>
+Created At:  <%= @user.created_at %>, Updated At: <%= @user.updated_at %>
+<br>
+<h1>
+  The time right now is: <%= Time.now.strftime("%Y-%m-%d %I:%M:%S %p") %>
+</h1>
